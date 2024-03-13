@@ -1,0 +1,282 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+} 
+
+.logo{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.caja{
+
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+nav {
+    text-align: center;
+    margin: 0 0 0 15px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color : #33516c;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.intro{
+    margin: 15px 0 15px 0;
+}
+
+.intro video{
+    width: 100vw;
+    height: auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+#titulo-menu{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.principal{
+    text-align: center;
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+    font-size: 20px;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.productos img{
+    width: 220px;
+    height: 220px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    transition: 400ms all;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 1.5%;
+}
+
+.productos li:hover{
+    border-color: #C78C19;
+    cursor: pointer;
+}
+
+.productos li:active{
+    border-color: #088C19;
+}
+
+.productos h3{
+    font-size: 30px;
+    font-weight: bold;
+    transition: 400ms all;
+}
+
+.productos li:hover h3{
+    font-size: 33px;
+    margin: 0 0 15px 0;
+}
+
+.productos li:hover img{
+    transform: scale(1.1);
+    margin: 0 0 15px 0;
+}
+
+.productos li:active img{
+    transform: scale(1);
+    margin: 0 0 15px 0;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.mapa{
+    padding: 30px 0;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa-contenido iframe{
+    border-radius: 10px;
+}
+
+.contacto{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-image: url(img/fondoAzul.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contacto h5{
+    color: white;
+}
+
+form{
+    margin: 50px 0 0 25px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: white;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #f08700;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: #f93b1d;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 50px;
+}
+
+.redes-sociales{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-redes{
+    width: 50px;
+    height: 50px;
+    margin: 0 0 20px 10px;
+    transition: 400ms all;
+}
+
+.logo-redes:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.copyright{
+    color: #000000;
+    font-size: 13px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 480px){
+
+    .principal, .mapa-contenido, .contacto{
+        width: auto;
+    }
+
+    .productos{
+        width: auto;
+    }
+
+    .productos li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .enviar{
+        width: 94%;
+    }
+
+}
